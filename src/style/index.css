@@ -1,0 +1,432 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vh 5vw;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo--logo {
+  height: 80px;
+}
+
+.header__navs {
+  list-style: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__navs--nav {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+}
+
+.header__navs--nav:hover {
+  color: grey;
+}
+
+.header__navs--nav:hover::after {
+  color: grey;
+}
+
+@media only screen and (min-width: 768px) {
+  .header__navs {
+    width: 30%;
+  }
+  .header__navs--nav {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header__navs {
+    width: 30%;
+  }
+  .header__navs--nav {
+    font-size: 16px;
+  }
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../homephoto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 86vh;
+}
+
+.home__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 1vw;
+  top: 38vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__content--title {
+  width: 60%;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.home__content--button {
+  font-weight: 500;
+  font-size: 16px;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 10px;
+  color: whitesmoke;
+  width: 100px;
+  height: 50px;
+}
+
+.home__content--button:hover {
+  background-color: lightsalmon;
+}
+
+.home__content--button:hover::after {
+  background-color: lightsalmon;
+  color: grey;
+}
+
+@media only screen and (min-width: 768px) {
+  .home__content {
+    right: 4vw;
+    top: 45vh;
+  }
+  .home__content--title {
+    width: auto;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  .home__content--button {
+    width: 150px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .home__content--title {
+    font-size: 42px;
+  }
+  .home__content--button {
+    width: 200px;
+    font-size: 25px;
+  }
+}
+
+.macrocal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  background-color: #e3e8eb;
+}
+
+.macrocal__calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  padding: 5vh 10vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.macrocal__calculator--label {
+  font-weight: 500;
+  margin-bottom: 1vh;
+}
+
+.macrocal__calculator--input {
+  margin-bottom: 1vh;
+  width: 80%;
+}
+
+.macrocal__calculator__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.macrocal__calculator__button--tobutton, .macrocal__calculator__button--calbutton {
+  background-color: lightcoral;
+  border: none;
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 1vh;
+}
+
+.macrocal__calculator__button--tobutton:hover, .macrocal__calculator__button--calbutton:hover {
+  background-color: lightsalmon;
+}
+
+@media only screen and (min-width: 768px) {
+  .macrocal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 86vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .macrocal__calculator {
+    width: 40vh;
+  }
+  .macrocal__calculator--label {
+    margin-bottom: 0.5vh;
+    font-size: 12px;
+  }
+  .macrocal__calculator--input {
+    width: 100%;
+    height: 3.5vh;
+  }
+  .macrocal__calculator__button {
+    width: 100%;
+  }
+  .macrocal__calculator__button--tobutton, .macrocal__calculator__button--calbutton {
+    margin: 2vh 0;
+    width: 85px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .macrocal__calculator--label {
+    font-size: 16px;
+  }
+  .macrocal__calculator--input {
+    font-size: 16px;
+    height: 4vh;
+  }
+  .macrocal__calculator__button--tobutton, .macrocal__calculator__button--calbutton {
+    width: 100px;
+    font-size: 12px;
+  }
+}
+
+.recipelist {
+  z-index: 1;
+  background-color: #e3e8eb;
+}
+
+.recipelist--title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.recipelist__list {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.recipelist__list__recipe {
+  padding: 2vh 6vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3vh;
+}
+
+.recipelist__list__recipe__card {
+  position: relative;
+  text-align: center;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.recipelist__list__recipe__card img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  -webkit-filter: brightness(0.75);
+          filter: brightness(0.75);
+  border-radius: 5px;
+}
+
+.recipelist__list__recipe__card__textbox--title {
+  position: absolute;
+  top: 0;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 20vh;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.recipelist__list__recipe__card__textbox__infobox {
+  text-align: start;
+  font-size: 10px;
+  font-weight: 800;
+  padding-right: 2vw;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  color: white;
+}
+
+.recipelist__list__recipe__card--button {
+  width: 110px;
+  font-weight: 800;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 50px;
+}
+
+.recipelist__list__recipe__card--button:hover {
+  background-color: lightsalmon;
+}
+
+@media only screen and (min-width: 768px) {
+  .recipelist--title {
+    font-size: 26px;
+  }
+  .recipelist__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .recipelist__list__recipe {
+    padding: 2vh 2vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .recipelist--title {
+    font-size: 36px;
+  }
+  .recipelist__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+}
+
+.recipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #e3e8eb;
+  width: 100%;
+}
+
+.recipe--title {
+  padding: 5vh 10vw;
+  font-weight: 800;
+}
+
+.recipe--image {
+  padding: 0 5vw;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 5vh;
+}
+
+.recipe__textbox {
+  text-align: start;
+  padding-left: 5vw;
+  font-size: 13px;
+}
+
+.recipe__textbox--item {
+  margin: 0.5vh 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  max-width: 1900px;
+  margin: 0 auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=index.css.map */

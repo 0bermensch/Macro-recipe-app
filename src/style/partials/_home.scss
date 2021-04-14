@@ -1,0 +1,75 @@
+.home {
+  display: flex;
+  background-image: url("../homephoto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 86vh;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1vw;
+    top: 38vh;
+    align-items: center;
+    &--title {
+      width: 60%;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 2vh;
+      text-align: center;
+    }
+    &--button {
+      font-weight: 500;
+      font-size: 16px;
+      background-color: lightcoral;
+      border: none;
+      border-radius: 10px;
+      color: whitesmoke;
+      width: 100px;
+      height: 50px;
+      &:hover {
+        background-color: lightsalmon;
+        &::after {
+          background-color: lightsalmon;
+          color: grey;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .home {
+    &__content {
+      right: 4vw;
+      top: 45vh;
+      &--title {
+        width: auto;
+        font-size: 32px;
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+      &--button {
+        width: 150px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .home {
+    &__content {
+      &--title {
+        font-size: 42px;
+      }
+      &--button {
+        width: 200px;
+        font-size: 25px;
+      }
+    }
+  }
+}
